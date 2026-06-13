@@ -35,3 +35,7 @@ class MyHashMap:
             
 # Use a fixed-size bucket array and handle collisions with separate chaining (a list of key-value pairs in each bucket). 
 # Hash with key % bucket_count, search/update within the bucket, and achieve average O(1) operations.
+
+# Instead of 1000, use a prime number like 2069.
+# self.size = 2069
+# Prime bucket counts generally reduce clustering and collisions, giving a more even key distribution.
