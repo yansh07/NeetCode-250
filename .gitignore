@@ -1,6 +1,6 @@
 .venv
 /venv
 venv
-revise
-.revise
-/revise
+revise.py
+.revise.py
+/revise.py
