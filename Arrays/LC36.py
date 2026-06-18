@@ -27,3 +27,8 @@ class Solution:
                 boxes[box_idx].add(val)
             
         return True
+    
+# The Approach: Hash Sets trackingThe most efficient way to solve this is to iterate through every cell in the 9 times 9 grid exactly once. 
+# As we traverse, we keep track of the numbers we have already seen using Hash Sets (or arrays).
+# We create three collections of sets:rows: An array of 9 sets, where rows[r] stores digits seen in row r.cols: 
+# An array of 9 sets, where cols[c] stores digits seen in column $c$.boxes: An array of 9 sets, where boxes[box_idx] stores digits seen in the 3  times 3 sub-box.
