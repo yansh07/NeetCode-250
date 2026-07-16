@@ -25,4 +25,4 @@ class Solution:
         return False
     
 s = Solution()
-print(s.checkInclusion(s1 = "ab", s2 = "eidbaooo"))
+print(s.checkInclusion(s1 = "ab", s2 = "eidbaooo")) 
