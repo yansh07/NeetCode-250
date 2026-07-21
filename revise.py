@@ -1,18 +1,12 @@
 #we do revision here
 
 class Solution:
-    def twoSum(self, nums: list[int], target: int) -> list[int]:
-        seen = {}
+    def rearrangeString(self, s: str, x: str, y: str) -> str:
+        count_x = s.count(x)
+        count_y = s.count(y)
 
-        for i, num in enumerate(nums):
-            complement = target - num
+        others = [char for char in s if char != x and char != y]
+        return (y * count_y) + "".join(others) + (x * count_x)
 
-            if complement in seen:
-                return [seen[complement], i]
-        
-            seen[num] = i
-        
-        return []
-    
-a = Solution()
-print(a.twoSum([2, 8, 4, 7], 9))
+s = Solution()
+print(s.rearrangeString(s="aabc", x="a", y="c"))
